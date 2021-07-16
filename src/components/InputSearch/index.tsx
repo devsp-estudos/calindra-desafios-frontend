@@ -13,7 +13,7 @@ export function InputSearch({ handleSearch, ...props }: InputSearchProps) {
       <Input
         pr="4.5rem"
         type="text"
-        placeholder="Pesquise pelo nome do Produto:"
+        placeholder="Pesquisar:"
         value={value}
         variant="filled"
         backgroundColor="gray.700"

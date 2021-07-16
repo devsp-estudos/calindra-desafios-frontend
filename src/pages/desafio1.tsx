@@ -18,10 +18,13 @@ export default function Desafio1() {
   }
 
   return (
-    <Box maxW="900px" mx="auto" px={6}>
+    <>
       <Header />
-      <InputSearch handleSearch={handleSearch} />
-      <ProductsGrid products={products} />
-    </Box>
+
+      <Box maxW="900px" mx="auto" px={6}>
+        <InputSearch handleSearch={handleSearch} />
+        <ProductsGrid products={products} />
+      </Box>
+    </>
   )
 }
