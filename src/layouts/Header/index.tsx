@@ -1,4 +1,4 @@
-import { Flex, HStack } from '@chakra-ui/react'
+import { Flex, HStack, Stack } from '@chakra-ui/react'
 import { FiYoutube, FiLinkedin, FiGithub, FiInstagram } from 'react-icons/fi'
 
 import { ActiveLink } from './ActiveLink'
@@ -6,11 +6,11 @@ import { IconLink } from './IconLink'
 
 export function Header() {
   return (
-    <Flex as="header" my={8} justify="space-evenly" align="center">
-      <HStack as="nav" spacing={8}>
+    <Flex as="header" my={8} justify={['space-around', 'space-evenly']} align="center">
+      <Stack as="nav" spacing={[1, 8]} direction={['column', 'row']}>
         <ActiveLink href="/desafio1">Desafio1</ActiveLink>
         <ActiveLink href="/desafio2">Desafio2</ActiveLink>
-      </HStack>
+      </Stack>
 
       <HStack spacing={6}>
         <IconLink
