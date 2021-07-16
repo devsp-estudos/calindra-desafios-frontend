@@ -4,7 +4,7 @@
     "next/core-web-vitals"
   ],
   "rules": {
-    "no-console": "warn",
+    "no-trailing-spaces": "error",
     "semi": [
       "error",
       "never"
@@ -20,6 +20,26 @@
     "comma-dangle": [
       "error",
       "always-multiline"
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
     ]
   }
 }
